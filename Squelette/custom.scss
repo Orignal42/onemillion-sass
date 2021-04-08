@@ -1,0 +1,97 @@
+@import "partials/mixin";
+
+$color:red;
+
+.jumbotron{
+    background-color: transparent;
+    
+}
+
+.jumbotron h1{
+    margin: 5%;
+    display: flex;
+    flex-flow: row;
+    font-size: 4em;
+ 
+}
+.jumbotron p{
+
+    margin-left: 5%;
+    margin-right:5%;
+   
+   
+}
+
+
+.titre{
+    color:$color;
+}
+
+#home img{
+    margin-top: 5%;
+}
+
+#who{
+
+    margin: 5%;
+}
+.imgstyle{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    clip-path: ellipse(50% 50%);
+
+    }
+#GET-INVOLVED{
+       @include compdisplay;
+        margin: 10%;
+
+        #GET-INVOLVED button{
+            border-radius: 10%;
+            @include compdisplay;
+            color: $color ;
+            background-color: gray;
+        }
+
+        }
+#footer{
+    height: 15em;
+    width: 100%;
+    background-color: $color;
+    @include display;
+    justify-content: left;
+   align-items: left;
+   flex-flow: column-reverse;
+   vertical-align: bottom;
+   
+}
+#footer img{
+margin-bottom: 3%;
+margin-left: 10%;
+
+}
+
+#back-to-top button{
+    position: fixed;
+    bottom: 50%;
+    right: 1%;
+    margin: 0 auto;
+    padding: 10px;
+
+
+}
+        
+
+/* Responsive Styling */
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
